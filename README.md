@@ -11,9 +11,10 @@ Python program created for Udacity Programming for Data Science nanodegree
 by Brent Benson that allows the user to:
 -analyze bike share usage patterns between Chicago, New York City,
 and Washington DC.  
--filter by month, day, or not at all
--review statistical results
+-filter by month, day, or not at all, error correction included
+-review statistical results, including median
 -view raw data
+-advanced tools pandas and numpy utilized
 
 ### Files used:
 bikeshare.py  
