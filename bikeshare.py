@@ -73,15 +73,15 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    # Display the most common month
     df['month_name'] = df['Start Time'].dt.month_name()
     print('The most common month is: {}.'.format(df['month_name'].mode()[0]))
 
-    # TO DO: display the most common day of week
+    # Display the most common day of week
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     print('The most common day of the week is: {}.'.format(df['weekday_name'].mode()[0]))
 
-    # TO DO: display the most common start hour
+    # Display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     print('The most common start hour is: {}:00.'.format(df['hour'].mode()[0]))
 
@@ -92,16 +92,16 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print("\nCalculating The Most Popular Stations and Trip...\n")
     start_time = time.time()
 
-    # TO DO: display most commonly used start station
+    # Display most commonly used start station
     print("The most commonly used start station is: ", df['Start Station'].mode()[0])
 
-    # TO DO: display most commonly used end station
+    # Display most commonly used end station
     print("The most commonly used end station is: ", df['End Station'].mode()[0])
 
-    # TO DO: display most frequent combination of start station and end station trip
+    # Display most frequent combination of start station and end station trip
     print("The most commonly used combination of start and end station is: \n{}".format(df.groupby(['Start Station', 'End Station']).size().nlargest(1)))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
