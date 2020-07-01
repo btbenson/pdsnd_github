@@ -7,7 +7,8 @@ github-bikeshare-project
 
 
 ### Description:
-Python program created by Brent Benson that allows the user to:
+Python program created for Udacity Programming for Data Science nanodegree
+by Brent Benson that allows the user to:
 -analyze bike share usage patterns between Chicago, New York City,
 and Washington DC.  
 -filter by month, day, or not at all
